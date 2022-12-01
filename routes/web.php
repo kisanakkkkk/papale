@@ -17,3 +17,6 @@ use App\Http\Controllers\ListingController;
 // });
 
 Route::get('/', 'App\Http\Controllers\ListingController@view');
+
+Route::get('/masuk','App\Http\Controllers\ListingController@viewMasuk');
+Route::post('/masuk','App\Http\Controllers\ListingController@createMasuk')->name('createMasuk');
